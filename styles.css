@@ -45,3 +45,22 @@ img{
     background-position: center;
     background-repeat: no-repeat;
 } */
+
+.box{
+    display: flex;
+    flex: 1 1 0px;
+    height: 160px;
+    width: 65px;
+    background-color: rgb(32, 143, 125);
+    border: 1px solid chartreuse;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.box > span {
+    font-weight: 700;
+    font-size: 18px;
+}

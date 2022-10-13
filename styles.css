@@ -3,6 +3,10 @@
 
 body{
     background-color: rgb(27, 26, 26) !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 
 

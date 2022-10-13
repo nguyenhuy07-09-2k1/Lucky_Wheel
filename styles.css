@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap');
+
+
+body{
+    background-color: rgb(27, 26, 26) !important;
+} 
+
+
+#canvasContainer {
+    position: relative;
+    width: 886px;
+    height: 666px;
+}
+ 
+#canvas {
+    z-index: 1;
+}
+ 
+#prizePointer {
+    position: absolute;
+    right: 25%;
+    top: 11%;
+    z-index: 999;
+}
+
+.winIndicator {
+    fill: #fff;
+}
+
+img{
+    transition: all 0.075s ease-in 0.001s;
+}
+
+.rotate{
+    transform: rotate3d(0, 0, 1, -56deg);
+}
+
+/* div.the_wheel
+{
+    background-image: url(./wheel_back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+} */

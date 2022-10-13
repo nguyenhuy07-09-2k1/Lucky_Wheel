@@ -73,7 +73,8 @@ $(document).ready(() => {
     function startSpin() {
       indicator.timeScale(1).seek(0);
   
-  
+      audio_applause.pause();
+      audio_applause.currentTime = 0;
       audio_bg.play();
   
       theWheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
@@ -94,10 +95,15 @@ $(document).ready(() => {
   $(canvas).on('click', () => {
     startSpin()
   })
+
+
+  let audio_applause = new Audio('./Tieng-vo-tay-huyt-sao-www_nhacchuongvui_com.mp3'); 
+  audio_applause.loop = true;
   // This function called after the spin animation has stopped.
   function alertPrize() {
     // Get the audio with the sound it in, then play.
     audio_bg.pause();
+    audio_applause.play();
     // audio_bg.currentTime = 0;
     // Call getIndicatedSegment() function to return pointer to the segment pointed to on wheel.
     let winningSegment = theWheel.getIndicatedSegment();

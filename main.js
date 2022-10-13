@@ -96,6 +96,15 @@ $(document).ready(() => {
           list.push(index)
         
       }
+      if(Number.parseInt(value_to) >= 100){
+        theWheel.textFontSize = 7
+        theWheel.lineWidth = 0.05
+       
+      }
+      if(Number.parseInt(value_to) > 100 && Number.parseInt(value_to) <=300){
+        theWheel.textFontSize = 3
+       
+      }
       console.log(shuffle(list))
       setSegment(...shuffle(list));
   });

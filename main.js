@@ -97,8 +97,6 @@ $(document).ready(() => {
   // This function called after the spin animation has stopped.
   function alertPrize() {
     // Get the audio with the sound it in, then play.
-    let winsound = document.getElementById('winsound');
-    winsound.play();
     audio_bg.pause();
     // audio_bg.currentTime = 0;
     // Call getIndicatedSegment() function to return pointer to the segment pointed to on wheel.
